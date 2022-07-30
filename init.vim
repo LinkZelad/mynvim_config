@@ -67,6 +67,10 @@ Plug 'Shatur/neovim-cmake'
 "session
 Plug 'Shatur/neovim-session-manager'
 
+" bufferline
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*'}
+
+
 call plug#end()
 
 """ Main Configurations
@@ -203,6 +207,7 @@ require('diagnostics')
 require "dap"
 require('neovim-cmake')
 require('keymaps')
+require('buffer_line')
 EOF
 
 """ Custom Functions
