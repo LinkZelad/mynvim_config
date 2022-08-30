@@ -10,8 +10,8 @@ keymap("", ",", ",", opts)
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
 
---keymap("n", "<leader><F2>", "<cmd>lua require'dap'.toggle_breakpoint(); require'dap-util'.store_breakpoints(true)<cr>", opts)
-keymap("n", "<leader><F2>", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", opts)
+keymap("n", "<leader><F2>", "<cmd>lua require'dap'.toggle_breakpoint(); require'user.dap.dap-util'.store_breakpoints(true)<cr>", opts)
+--keymap("n", "<leader><F2>", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", opts)
 --keymap("n", "<F2>", "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>", opts)
 keymap("n", "<leader>dr", "lua require'dap'.repl.open()<cr>", opts)
 

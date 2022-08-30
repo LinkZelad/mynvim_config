@@ -45,4 +45,4 @@ dap_install.config(
     --   },
     -- },
   }
-  )
+)
