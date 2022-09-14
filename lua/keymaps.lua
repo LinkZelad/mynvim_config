@@ -52,4 +52,7 @@ keymap("n","<leader>$",":<Cmd>BufferLineGoToBuffer -1<CR>",opts)
 -- Set target arguments (:CMake set_target_arguments, they will be added automatically for running and debugging).
 -- Build and run (:CMake build_and_run) or build and debug (:CMake build_and_debug) to execute the selected target. You can pass additional arguments to these commands, which will be temporarily added to the arguments from 4.
 
-
+-- rename
+keymap('i', '<F2>', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
+keymap('n', '<leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
+keymap('v', '<leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })

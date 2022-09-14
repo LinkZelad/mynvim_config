@@ -78,6 +78,9 @@ Plug 'dhruvasagar/vim-table-mode'
 " telescope-ui-select
 Plug 'nvim-telescope/telescope-ui-select.nvim'
 
+" rename
+Plug 'filipdutescu/renamer.nvim', {'branch': 'master'}
+
 call plug#end()
 
 """ Main Configurations
@@ -203,6 +206,7 @@ require('neovim-cmake')
 require('keymaps')
 require('buffer_line')
 require('telescope-ui-select')
+require('rename')
 EOF
 
 """ Custom Functions
